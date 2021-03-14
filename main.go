@@ -1,16 +1,12 @@
 package main
 
-import "fmt"
-
 func main() {
-	// var card string = "Ace of Spades"
-	cards := []string{newCard(), newCard()}
+	// var cards av type deck har tilgang til print() metode.
+	cards := deck{newCard(), newCard()}
 
 	cards = append(cards, "Six of Spades")
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 }
 
 func newCard() string {
