@@ -1,14 +1,8 @@
 package main
 
 func main() {
-	// var cards av type deck har tilgang til print() metode.
-	cards := deck{newCard(), newCard()}
-
-	cards = append(cards, "Six of Spades")
+	// var cards av type deck har tilgang til print() funksjon.
+	cards := newDeck()
 
 	cards.print()
-}
-
-func newCard() string {
-	return "Five of Hearts"
 }
